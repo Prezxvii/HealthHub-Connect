@@ -1,0 +1,221 @@
+/* style.css */
+
+/* Apply flexbox to header and nav */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header, nav, main, footer {
+  width: 100%;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+}
+
+/* Centering Header Element */
+header {
+  background-color: #007bff; /* Header background color */
+  color: #fff; /* Header text color */
+  padding: 20px; /* Add padding for spacing */
+  text-align: center; /* Center align text */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  cursor: pointer;
+}
+
+
+
+header h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 2.5em; /* Increase font size for emphasis */
+  letter-spacing: 2px; /* Add letter spacing for readability */
+  text-transform: uppercase; /* Convert text to uppercase for consistency */
+}
+
+
+/* Header Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply animation to header */
+header {
+  animation: fadeIn 1s ease-out;
+}
+
+
+/* Add a border radius for rounded corners */
+header {
+  border-radius: 5px;
+}
+
+/* Add a hover effect to change background color */
+header:hover {
+  background-color: #0056b3; /* Darker shade of blue */
+}
+
+/* Add padding to top and bottom for more spacing */
+header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Add a subtle gradient background */
+header {
+  background: linear-gradient(to right, #007bff, #0056b3); /* Gradient from blue to darker blue */
+}
+
+
+/* Navigation Styles */
+/* Navigation Styles */
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: center; /* Center the navigation horizontally */
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  width: 100%; /* Make the navigation bar take full width */
+  max-width: 600px; /* Limit the maximum width of the navigation bar */
+  margin: 0 auto; /* Center the navigation bar horizontally */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Align list items horizontally */
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0; /* Remove margin for the first list item */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+  padding: 8px 12px; /* Add padding for better clickable area */
+  border-radius: 3px; /* Add border radius for rounded edges */
+}
+
+nav ul li a:hover {
+  color: #007bff;
+  background-color: #e9ecef; /* Add background color on hover */
+}
+
+
+/* Main Content Styles */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Content Section Styles */
+.content-section {
+  flex: 1 1 300px; /* Adjust width as needed */
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc; /* Adjust border color */
+  border-radius: 10px; /* Increase border radius for smoother edges */
+  background-color: #fff; /* Adjust background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/*  Add hover effect */
+.content-section:hover {
+  transform: translateY(-3px); /* Move the section up slightly on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/*  Add transition for smoother hover effect */
+.content-section {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Apply transition to transform and box-shadow */
+}
+
+/* Footer Styles */
+footer {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for Search Box */
+.search-box {
+  padding: 8px 12px; /* Adjust padding as needed */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; /* Adjust font size as needed */
+  width: 200px; /* Adjust width as needed */
+}
+
+/* Styling for Search Button */
+.search-button, .subscribe {
+  padding: 8px 16px; /* Adjust padding as needed */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px; /* Adjust font size as needed */
+  cursor: pointer;
+  margin-left: 10px; /* Adjust margin as needed */
+}
+
+.search-button {
+  background-color: #7ed5ce;
+  padding: 12px;
+}
+
+.search-button:hover {
+  background-color: rgb(83, 138, 192); /* Change color on hover */
+}
+
+/* Styling for Subscribe Button */
+.subscribe {
+  background-color: #49a3b5;
+}
+
+.subscribe:hover {
+  background-color: #702188; /* Change color on hover */
+}
+
+/* Hover Effect with Underline */
+a {
+  position: relative;
+  color: #333;
+  text-decoration: none;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+h2 {
+  font-family: cursive;
+}

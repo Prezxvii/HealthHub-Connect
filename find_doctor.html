@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Medical</title>
+  </head>
+  <body>
+    <header onclick="goToMainPage()" onclick="toggleSection('HealthHub Connect')"><h1>HealthHub Connect</h1></header>
+    <nav>
+      <div class="search-container">
+        <input type="text" class="search-box" placeholder="Search..." />
+        <button class="search-button">Search</button>
+        <button class="subscribe">Subscribe</button>
+
+      <ul>
+        <li><a href="about.html" onclick="toggleSection('about')">About</a></li>
+        <li><a href="conditions.html" onclick="toggleSection('conditions')">Conditions</a></li>
+        <li><a href="drugs&supplements.html" onclick="toggleSection('drugs&supplements')">Drugs & Supplements</a></li>
+        <li><a href="find_doctor.html" onclick="toggleSection('find_doctor')">Find a Doctor</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="find-a-doctor" class="content-section">
+        <h2>Find a Doctor</h2>
+        <h3>Physician Directory</h3>
+        <p>
+          The Physician Directory section provides users with a comprehensive
+          list of doctors available for consultation. Users can search for
+          doctors based on various criteria such as specialization, location, or
+          patient reviews. Each doctor's profile includes essential information
+          such as contact details, area of expertise, education, and experience,
+          enabling users to make informed decisions when selecting a healthcare
+          provider.
+        </p>
+        <ul>
+          <li>Dr. Emily Smith, MD - Internal Medicine (212) 555-1234 - Manhattan</li>
+          <li>Dr. Michael Johnson, MD - Pediatrics (646) 555-5678 - Brooklyn</li>
+          <li>Dr. Sarah Patel, MD - Family Medicine (718) 555-9876 - Queens</li>
+          <li>Dr. David Brown, MD - Cardiology (917) 555-4321 - Bronx</li>
+          <li>Dr. Jennifer Lee, MD - Dermatology (347) 555-8765 - Staten Island</li>
+          <li>Dr. Robert Garcia, MD - Orthopedics (212) 555-2468 - Manhattan</li>
+          <li>Dr. Lisa Nguyen, MD - Psychiatry (718) 555-1357 - Queens</li>
+          <li>Dr. Daniel Wilson, MD - Neurology (917) 555-8642 - Brooklyn</li>
+          <li>Dr. Elizabeth Taylor, MD - Obstetrics and Gynecology (646) 555-9753 - Bronx</li>
+          <li>Dr. John Miller, MD - Ophthalmology (347) 555-3201 - Staten Island</li>
+        </ul>
+      </section>
+      
+    </main>
+  </body>
+  <script src="script.js"></script>
+  <footer>
+    <p>&copy: 2024 HealthHub Connect Website. All rights reserved.</p>
+  </footer>
+</html>

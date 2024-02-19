@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Medical</title>
+  </head>
+  <body>
+    <header onclick="goToMainPage()" onclick="toggleSection('HealthHub Connect')"><h1>HealthHub Connect</h1></header>
+    <nav>
+      <div class="search-container">
+        <input type="text" class="search-box" placeholder="Search..." />
+        <button class="search-button">Search</button>
+        <button class="subscribe">Subscribe</button>
+
+      <ul>
+        <li><a href="about.html" onclick="toggleSection('about')">About</a></li>
+        <li><a href="conditions.html" onclick="toggleSection('conditions')">Conditions</a></li>
+        <li><a href="drugs&supplements.html" onclick="toggleSection('drugs&supplements')">Drugs & Supplements</a></li>
+        <li><a href="find_doctor.html" onclick="toggleSection('find_doctor')">Find a Doctor</a></li>
+      </ul>
+    </nav>
+    <section id="drugs&supplements" class="content-section">
+      <h2>Drugs & Supplements</h2>
+      <h3>Your Guide to Medications & Supplements</h3>
+      <p>
+        Welcome to the Drugs & Supplements section of our medical website.
+        Here, you can find comprehensive information on various medications,
+        supplements, and treatments commonly used in healthcare. Our aim is to
+        provide you with accurate, reliable, and up-to-date information to
+        help you make informed decisions about your health and well-being.
+      </p>
+      <div>
+        <p>
+          <b> Drug Database:</b> Explore our extensive database of
+          prescription drugs and over-the-counter medications. Each entry
+          includes detailed information about the drug's uses, dosage, side
+          effects, precautions, and interactions.
+        </p>
+        <p>
+          <b> Supplement Guide:</b> Learn about different dietary supplements,
+          vitamins, and minerals that may support your health. Our supplement
+          guide provides evidence-based information on their benefits,
+          recommended dosages, and potential risks.
+        </p>
+        <p>
+          <b> Treatment Options:</b> Discover various treatment options for
+          common medical conditions, including both conventional and
+          alternative therapies. We provide insights into the effectiveness of
+          different treatments and their potential side effects.
+        </p>
+        <p>
+          <b> Safety Alerts:</b> Stay informed about the latest safety alerts,
+          recalls, and warnings related to medications and supplements. We
+          prioritize your safety and aim to keep you updated on any potential
+          risks associated with these products.
+        </p>
+        <p>
+          <b> Health Resources:</b> Access additional resources, such as
+          articles, videos, and downloadable materials, to further educate
+          yourself about medications, supplements, and healthcare topics.
+        </p>
+      </div>
+    </section>
+  </main>
+  </body>
+
+  <script src="script.js"></script>
+  <footer>
+    <p>&copy: 2024 HealthHub Connect Website. All rights reserved.</p>
+  </footer>
+</html>

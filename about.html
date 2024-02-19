@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Medical</title>
+  </head>
+  <body>
+    <header onclick="goToMainPage()" onclick="toggleSection('HealthHub Connect')"><h1>HealthHub Connect</h1></header>
+    <nav>
+      <div class="search-container">
+        <input type="text" class="search-box" placeholder="Search..." />
+        <button class="search-button">Search</button>
+        <button class="subscribe">Subscribe</button>
+
+      <ul>
+        <li><a href="about.html" onclick="toggleSection('about')">About</a></li>
+        <li><a href="conditions.html" onclick="toggleSection('conditions')">Conditions</a></li>
+        <li><a href="drugs&supplements.html" onclick="toggleSection('drugs&supplements')">Drugs & Supplements</a></li>
+        <li><a href="find_doctor.html" onclick="toggleSection('find_doctor')">Find a Doctor</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="about" class="content-section">
+        <h2>About HealthHub Connect</h2>
+        <p>
+          HealthHub Connect is your trusted online resource for reliable medical information, resources, and support. Our mission is to empower individuals to make informed decisions about their health and well-being by providing comprehensive and up-to-date information on various medical conditions, treatments, medications, and healthcare providers.
+        </p>
+        <p>
+          Whether you're seeking information about a specific medical condition, exploring treatment options, or looking for a qualified healthcare provider, HealthHub Connect is here to support you on your journey towards better health.
+        </p>
+      </section>
+  </body>
+  <script src="script.js"></script>
+  <footer>
+    <p>&copy: 2024 HealthHub Connect Website. All rights reserved.</p>
+  </footer>
+</html>
